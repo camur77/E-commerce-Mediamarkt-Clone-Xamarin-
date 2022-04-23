@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mediamrkt.Views.beyaziki2"
+             Title="Ürün Özellikleri"
+             Shell.BackgroundColor="#191919"
+             Shell.ForegroundColor="White"
+             BackgroundColor="#191919">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="beyaz2.jpeg"/>
+                <Button HorizontalOptions="Center" Text="Sepete Ekle" WidthRequest="380" CornerRadius="20" BackgroundColor="Green"/>
+                <Label Margin="40,5" TextColor="White" TextDecorations="Underline">Stoktan Gönderi</Label>
+                <Label Margin="40,5" TextColor="White" TextDecorations="Underline">Mağaza Stok Durumu</Label>
+                <Button Margin="0,5" CornerRadius="20" HorizontalOptions="Center" WidthRequest="380" BackgroundColor="Black" Text="Mağazadan Teslim Al" HeightRequest="40"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

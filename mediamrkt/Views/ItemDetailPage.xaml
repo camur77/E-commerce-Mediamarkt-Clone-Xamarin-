@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mediamrkt.Views.ItemDetailPage"
+             Title="Favorilerim"
+             BackgroundColor="#191919"
+             Shell.BackgroundColor="#191919"
+             Shell.ForegroundColor="White">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Margin="10,10" FontSize="22" FontAttributes="Bold" TextColor="White">Favori Listem</Label>
+                <Label Margin="20,0" FontSize="15" FontAttributes="Bold" TextColor="White">Şu an favori listenizde ürün bulunmamaktadır.</Label>
+                <Button Margin="0,10" BackgroundColor="Black" Text="Ürüne geri dön" FontAttributes="Bold" TextTransform="None" FontSize="18" CornerRadius="5" HorizontalOptions="Center" WidthRequest="370"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

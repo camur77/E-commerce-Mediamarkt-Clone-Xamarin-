@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mediamrkt.Views.Page2"
+             Title="Kampanyalar"
+             Shell.BackgroundColor="#191919"
+             Shell.ForegroundColor="White"
+             BackgroundColor="#191919">
+
+  
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Button Margin="10,20" BackgroundColor="Red" Text="Tüm Kampanyalar" FontSize="18" HeightRequest="60"/>
+            <Button TextColor="Black" FontSize="18" Margin="10,-20" BackgroundColor="White" Text="CLUB Kampanyaları" HeightRequest="60"/>
+            <ImageButton Source="resim1.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,30" WidthRequest="390"/>
+            <ImageButton Source="resim2.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-15" WidthRequest="390"/>
+            <ImageButton Source="resim3.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,30" WidthRequest="390"/>
+            <ImageButton Source="resim4.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-15" WidthRequest="390"/>
+            <ImageButton Source="resim4.png"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,30" WidthRequest="390"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mediamrkt.Views.ItemsPage"
+             Title="Ürünler"
+             xmlns:local="clr-namespace:mediamrkt.ViewModels"  
+             xmlns:model="clr-namespace:mediamrkt.Models"  
+             x:Name="BrowseItemsPage"
+             Shell.BackgroundColor="#191919"
+             Shell.ForegroundColor="White"
+             BackgroundColor="#191919">
+
+    <ContentPage.ToolbarItems>
+        
+        
+    </ContentPage.ToolbarItems>
+    <!--
+      x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
+      https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
+    -->
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label></Label>
+                <Label FontSize="20" HorizontalOptions="Center" TextColor="White">Ürünler</Label>
+                <Label TextColor="White" HorizontalOptions="Center">---------------------------------------------------------------------------------------------------------</Label>
+                <Button Clicked="deneme" BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Kampanyalar"></Button>
+                <Label TextColor="White" Margin="0,-3" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button Clicked="deneme1" BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Telefon"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Bilgisayar"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button Clicked="deneme2" BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Tv, Görüntü Ve Ses"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Aksesuar"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Foto , Kamera ve Drone"> </Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button Clicked="deneme3" BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Beyaz Eşya"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Ev Aletleri ve Yaşam"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Kişisel Bakım"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button  BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Spor, Oyun ve Outdoor"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button  BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Apple"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Outlet"></Button>
+                <Label TextColor="White" HorizontalOptions="Center">--------------------------------------------------------------------------------------------------------</Label>
+                <Button BackgroundColor="#191919" TextColor="White" Margin="10,-8" FontSize="15" Text="Sigorta ve Artı Hizmetler"></Button>
+                <Label></Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

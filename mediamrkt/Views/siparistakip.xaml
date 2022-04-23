@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mediamrkt.Views.siparistakip"
+             Shell.PresentationMode="ModalAnimated"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             Shell.BackgroundColor="#191919"
+             Shell.ForegroundColor="White"
+             BackgroundColor="#191919">
+
+    <Shell.TitleView >
+        <Label HorizontalOptions="Start" VerticalOptions="Center" Margin="10,12" TextColor="White" FontSize="20">Sipariş Takip</Label>
+    </Shell.TitleView>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button Margin="0,100" Text=" Sipariş Takibi" TextTransform="None" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center" WidthRequest="360" CornerRadius="10" BorderColor="Gray" BackgroundColor="#2c2c2c"></Button>
+                <Frame Margin="0,-60" HeightRequest="10" HorizontalOptions="Center" WidthRequest="320" CornerRadius="10" BackgroundColor="#6a6a6a" BorderColor="Gray">
+                    <Entry  Margin="10,-17" Placeholder="E-posta adresi" PlaceholderColor="White" BackgroundColor="#6a6a6a"></Entry>
+                </Frame>
+                <Frame Margin="0,75" HorizontalOptions="Center" WidthRequest="320" HeightRequest="10" CornerRadius="10" BackgroundColor="#6a6a6a" BorderColor="Gray">
+                    <Entry BackgroundColor="#6a6a6a" Margin="10, -17" Placeholder="Şifre" PlaceholderColor="White" IsPassword="True"></Entry>
+                </Frame>
+                <Button Margin="0,-30" Text=" Sipariş Sorgula" TextTransform="None" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" WidthRequest="360" CornerRadius="10" BorderColor="Gray" BackgroundColor="Black" ></Button>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

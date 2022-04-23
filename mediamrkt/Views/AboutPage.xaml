@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:mediamrkt.ViewModels"
+             x:Class="mediamrkt.Views.AboutPage"
+             Title="Anasayfa"
+             Shell.BackgroundColor="#191919"
+             Shell.ForegroundColor="White"
+             BackgroundColor="#191919">
+
+    <Shell.TitleView >
+        <Label HorizontalOptions="Start" VerticalOptions="Center" Margin="10,12" TextColor="White" FontSize="20">Anasayfa</Label>
+    </Shell.TitleView>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame  BackgroundColor="#191919" BorderColor="Red" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="18" WidthRequest="320">
+                    <SearchBar VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" PlaceholderColor="White"  Placeholder="Ürün arayın" BackgroundColor="#191919">
+                    </SearchBar>
+                </Frame>
+                <Image  Source="bes.jpeg" Margin="10,10,10,0"></Image>
+            <StackLayout>
+            
+    <Grid VerticalOptions="StartAndExpand" RowDefinitions="340,Auto">
+        <CarouselView VerticalOptions="CenterAndExpand" Margin="10,20" IsBounceEnabled="True" ItemsSource="{Binding UserCollection}"
+                      IndicatorView="indicatorView">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Grid  HorizontalOptions="FillAndExpand">
+                        <Image   Source="{Binding UserImage}" 
+                                       Aspect="AspectFill"
+                                       HorizontalOptions="FillAndExpand" />
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView   Grid.Row="1" Margin="0,-15,0,200" VerticalOptions="EndAndExpand"   x:Name="indicatorView"  
+                       IndicatorColor="white"
+                       SelectedIndicatorColor="Red"
+                       HorizontalOptions="Center" />
+
+                        
+                    </Grid>
+                <Image Source="alti.jpeg" Margin="10,-190,10,15"></Image>
+
+                    <ScrollView Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                        <StackLayout BindableLayout.ItemsSource="{Binding minik}" Orientation="Horizontal" Spacing="7" VerticalOptions="Start">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout VerticalOptions="Start">
+                                        <Frame Padding="0" HasShadow="False"  HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="100" HeightRequest="100" WidthRequest="80">
+                                            <Image Source="{Binding Image}" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                        </Frame>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+ 
+                <Grid RowSpacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid RowSpacing="20" Margin="30,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="MediaMarkt Öneriyor" TextColor="White" FontSize="20"/>
+                        <Label Text="-----------------------------------------" TextColor="Red" FontSize="14" VerticalOptions="Center" Opacity="0.5" HorizontalOptions="End" Margin="0,0,30,0"/>
+                        <ScrollView Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                            <StackLayout BindableLayout.ItemsSource="{Binding CollectionsList}" Orientation="Horizontal" Spacing="20" VerticalOptions="Start">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout VerticalOptions="Start">
+                                            <Frame Padding="0" HasShadow="False"  HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="150" WidthRequest="150">
+                                                <Image Source="{Binding Image}" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                            </Frame>
+                                            <Label Text="{Binding Name}" TextColor="White" FontSize="15" />
+                                            <Label Text="{Binding Price}" Margin="0,-7,0,0" TextColor="White" FontSize="12"/>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </ScrollView>
+                    </Grid>
+                    <Grid Grid.Row="1" RowSpacing="20" Margin="30,0,0,30" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Sizin İçin Seçtiklerimiz" TextColor="White" FontSize="20"/>
+                        <Label Text="-------------------------------------" TextColor="Red" FontSize="14" VerticalOptions="Center" Opacity="0.5" HorizontalOptions="End" Margin="0,0,30,0"/>
+                        <ScrollView Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                            <StackLayout BindableLayout.ItemsSource="{Binding TrendsList}" Orientation="Horizontal" Spacing="20" VerticalOptions="Start">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout VerticalOptions="Start">
+                                            <Frame Padding="0" HasShadow="False"  HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="150" WidthRequest="150">
+                                                <Image Source="{Binding Image}" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                            </Frame>
+                                            <Label Text="{Binding Name}" TextColor="White" FontSize="15" />
+                                            <Label Text="{Binding Price}" Margin="0,-7,0,0" TextColor="White" FontSize="12"/>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </ScrollView>
+                    </Grid>
+
+                </Grid>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+
+</ContentPage>

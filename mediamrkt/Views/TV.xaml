@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mediamrkt.Views.TV"
+             Title="TV, Görüntü ve Ses"
+             Shell.BackgroundColor="#191919"
+             Shell.ForegroundColor="White"
+             BackgroundColor="#191919">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Margin="10,10" FontSize="17" TextColor="White">Telvizyonlar</Label>
+                <Label Margin="20,1" TextColor="White">- Tüm Televizyonlar</Label>
+                <ImageButton Clicked="telefonbir" Source="tv1.jpeg" Margin="5"/>
+                <ImageButton Clicked="telefoniki" Source="tv2.jpeg" Margin="5"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
